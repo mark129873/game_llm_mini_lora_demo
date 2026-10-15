@@ -1,28 +1,10 @@
-# Python environment and generated files
 /.venv/
-__pycache__/
-*.py[cod]
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-
-# Local caches, model weights, training products and machine logs
 /cache/
+/downloads/
 /models/
 /outputs/
 /logs/
-
-# Installers can be downloaded again; retain the checksum manifest
-/downloads/*
-!/downloads/SHA256SUMS
-
-# Credentials and editor / OS files
+__pycache__/
+*.py[cod]
 .env
 .env.*
-!.env.example
-.vscode/
-.idea/
-.DS_Store
-Thumbs.db
-*.swp
-*.tmp
