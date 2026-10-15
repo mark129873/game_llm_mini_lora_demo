@@ -14,11 +14,10 @@ PROJECT_USER="$(stat -c '%U' "$PROJECT")"
 PROJECT_GROUP="$(stat -c '%G' "$PROJECT")"
 export DEBIAN_FRONTEND=noninteractive
 
-# curl/GnuPG 用于下载和验证软件源；libnuma1 是 HIP 的系统依赖；
-# python3-venv/pip 供后续创建 Python 3.12 虚拟环境使用。
+# curl/GnuPG 用于下载和验证软件源；libnuma1 是 HIP 的系统依赖。
 apt-get update -qq
 apt-get install -y --no-install-recommends \
-    python3-venv python3-pip curl ca-certificates gnupg libnuma1
+    curl ca-certificates gnupg libnuma1
 
 # 固定使用 ROCm 7.2.1 的 Ubuntu noble 仓库，并为该源配置独立签名密钥。
 install -d /etc/apt/keyrings

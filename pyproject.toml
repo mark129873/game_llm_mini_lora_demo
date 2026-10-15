@@ -1,0 +1,22 @@
+[project]
+name = "qwen-lora-demo"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "accelerate==1.15.0",
+    "huggingface-hub==2.2.0",
+    "numpy==1.26.4",
+    "peft==0.21.2",
+    "safetensors==0.8.0",
+    "torch==2.9.1+rocm7.2.1.lw.gitff65f5bc",
+    "transformers==5.19.0",
+    "triton==3.5.1+rocm7.2.1.gita272dfa8",
+]
+
+[tool.uv]
+package = false
+environments = ["sys_platform == 'linux' and platform_machine == 'x86_64'"]
+
+[tool.uv.sources]
+torch = { url = "https://repo.radeon.com/rocm/manylinux/rocm-rel-7.2.1/torch-2.9.1%2Brocm7.2.1.lw.gitff65f5bc-cp312-cp312-linux_x86_64.whl" }
+triton = { url = "https://repo.radeon.com/rocm/manylinux/rocm-rel-7.2.1/triton-3.5.1%2Brocm7.2.1.gita272dfa8-cp312-cp312-linux_x86_64.whl" }
