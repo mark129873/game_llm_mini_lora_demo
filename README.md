@@ -24,12 +24,12 @@ source env.sh
 uv run lora_demo.py
 ```
 
-demo 每次从原始模型开始，依次训练、保存 LoRA、重新加载并回答一个问题。参数和示例数据直接修改 `lora_demo.py` 顶部常量。原始模型在 `models/Qwen3.5-0.8B`；每次运行覆盖 `outputs/adapter` 中的演示结果。
+demo 每次从原始模型开始，依次训练、保存 LoRA、重新加载并回答一个问题。参数和示例数据写在 `lora_demo.py` 的使用位置旁，可直接修改。原始模型在 `models/Qwen3.5-0.8B`；每次运行覆盖 `outputs/adapter` 中的演示结果。
 
 ## 文件
 
 ```text
-lora_demo.py        # 最小训练、保存和重载问答演示
+lora_demo.py        # 带通俗中文注释的训练、保存和重载问答演示
 pyproject.toml     # 项目依赖与 AMD wheel 来源
 uv.lock            # 依赖版本和校验值
 .python-version    # Python 版本
