@@ -32,6 +32,4 @@ export HSA_ENABLE_DXG_DETECTION=1
 export PATH="/opt/rocm/bin:$PATH"
 export LD_LIBRARY_PATH="/opt/rocm/lib:/usr/lib/wsl/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
 
-# 避免在源码目录生成 __pycache__；Python 会直接在内存中编译模块。
-export PYTHONDONTWRITEBYTECODE=1
 source "$LORA_PROJECT/.venv/bin/activate"
