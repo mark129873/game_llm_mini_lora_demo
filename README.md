@@ -1,8 +1,7 @@
 # Qwen3.5 LoRA Demo
 
-RX 7700 XT / WSL2 Ubuntu 24.04。首次配置见 [INSTALL.md](INSTALL.md)。
+RX 7700 XT / WSL2 Ubuntu 24.04。
 
-[文件树及各文件用途](tree.md)。
 
 ## 训练、保存并验证重载
 
