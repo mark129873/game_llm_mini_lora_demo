@@ -473,9 +473,3 @@ export PATH="/opt/rocm/bin:$PATH"
 export LD_LIBRARY_PATH="/opt/rocm/lib:/usr/lib/wsl/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
 source "$LORA_PROJECT/.venv/bin/activate"
 ```
-
-## 2026-10-16 项目清理与 Git 初始化
-
-已清理安装完成后的 Torch / Triton wheel、pip / uv 缓存、项目顶层 Python 字节码和旧缺库报错日志。downloads/SHA256SUMS 保留；install_python.sh 会在重新安装时先下载对应 wheel，再核对校验清单。ROCDXG deb 仍保留，完整重装时 install_rocm.sh 也会重新下载它。
-
-全部源码脚本仍用于运行或安装复现，均已保留。详见 CLEANUP.md，其中记录了本次清理、Git 初始化以及后续验证的命令。
