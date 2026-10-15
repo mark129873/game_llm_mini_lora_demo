@@ -2,7 +2,7 @@
 
 RX 7700 XT / WSL2 Ubuntu 24.04。首次配置见 [INSTALL.md](INSTALL.md)。
 
-[项目文件与运行流程手册（单文件 HTML）](project-guide.html)，包含 uv 依赖版本管理说明。
+[文件树及各文件用途](tree.md)。
 
 ## 训练、保存并验证重载
 
