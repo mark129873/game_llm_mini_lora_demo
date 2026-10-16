@@ -2,7 +2,7 @@
 /cache/
 /downloads/
 /models/
-/outputs/
+# /outputs/
 /logs/
 __pycache__/
 *.py[cod]
