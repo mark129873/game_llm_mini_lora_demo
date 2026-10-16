@@ -36,4 +36,10 @@ uv.lock            # 依赖版本和校验值
 install_rocm.sh    # ROCm 系统库
 install_python.sh  # uv 环境同步与模型下载
 env.sh             # uv 路径、显卡和缓存配置
+outputs/adapter/README.md                  # PEFT 生成的适配器说明
+outputs/adapter/adapter_config.json        # LoRA 配置与基础模型信息
+outputs/adapter/adapter_model.safetensors  # 训练后的 LoRA 参数，不是完整模型
+outputs/adapter/chat_template.jinja        # 对话格式模板
+outputs/adapter/tokenizer.json             # 分词器数据：词表、切分规则等
+outputs/adapter/tokenizer_config.json      # 分词器类型、特殊标记等配置
 ```
